@@ -54,6 +54,7 @@ export interface AuthData {
 
 export interface UserData {
   id:             number;
+  slug:           string;
   provider:       string;
   uid:            string;
   name:           string;

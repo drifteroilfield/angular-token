@@ -6,6 +6,11 @@ import { AngularTokenService } from './angular-token.service';
 import { AngularTokenInterceptor } from './angular-token.interceptor';
 import { ANGULAR_TOKEN_OPTIONS } from './angular-token.token';
 
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { AuthStoreEffects } from './auth-store/effects';
+import { featureReducer } from './auth-store/reducer';
+
 export * from './angular-token.service';
 
 @NgModule()
